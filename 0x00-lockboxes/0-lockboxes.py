@@ -7,7 +7,7 @@ box may contain keys to the other boxes."""
 def canUnlockAll(boxes):
     """Determines if all boxes can be open"""
 
-    if not boxes or type(boxes) is not list:
+    if type(boxes) is not list:
         return False
 
     condition = False
@@ -17,8 +17,8 @@ def canUnlockAll(boxes):
             return False
     return True"""
 
-    if len(boxes) <= 2:
-        return True
+    """if len(boxes) <= 2:
+        return True"""
 
     for i in range(1, len(boxes) - 1):
         #print(boxes[i])
