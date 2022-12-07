@@ -7,7 +7,7 @@ box may contain keys to the other boxes."""
 def canUnlockAll(boxes):
     """Determines if all boxes can be open"""
 
-    if not boxes:
+    if not boxes or type(boxes) is not list:
         return False
 
     condition = False
