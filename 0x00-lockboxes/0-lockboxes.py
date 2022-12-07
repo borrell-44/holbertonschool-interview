@@ -17,10 +17,10 @@ def canUnlockAll(boxes):
     if len(boxes) <= 2:
         return True
 
-    for i in range(0, len(boxes) - 1):
+    for i in range(1, len(boxes) - 1):
         #print(boxes[i])
         for l in range(0, len(boxes) - 1):
-            if (i + 1) in boxes[l]:
+            if i in boxes[l]:
                 condition = True
         if condition is False:
             return False
