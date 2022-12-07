@@ -20,7 +20,7 @@ def canUnlockAll(boxes):
     for i in range(0, len(boxes) - 1):
         #print(boxes[i])
         for l in range(0, len(boxes) - 1):
-            if (i + 1) in boxes[l] and len(boxes[i]) > 0:
+            if (i + 1) in boxes[l]:
                 condition = True
         if condition is False:
             return False
