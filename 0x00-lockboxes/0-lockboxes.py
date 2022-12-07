@@ -21,7 +21,6 @@ def canUnlockAll(boxes):
         return True"""
 
     for i in range(1, len(boxes) - 1):
-        #print(boxes[i])
         for l in range(0, len(boxes) - 1):
             if i in boxes[l]:
                 condition = True
