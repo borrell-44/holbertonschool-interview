@@ -21,9 +21,9 @@ def canUnlockAll(boxes):
     """if len(boxes) <= 2:
         return True"""
 
-    for i in range(1, len(boxes) - 1):
-        for line in range(0, len(boxes) - 1):
-            if i in boxes[line]:
+    for i in range(1, len(boxes)):
+        for num in range(0, len(boxes) - 1):
+            if i in boxes[num]:
                 condition = True
         if condition is False:
             return False
