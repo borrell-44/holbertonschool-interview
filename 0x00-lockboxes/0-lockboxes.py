@@ -18,8 +18,8 @@ def canUnlockAll(boxes):
             return False
     return True"""
 
-    """if len(boxes) <= 2:
-        return True"""
+    if len(boxes) <= 2:
+        return True
 
     for i in range(1, len(boxes)):
         for num in range(0, len(boxes) - 1):
