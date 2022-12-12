@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
-"""You have n number of locked boxes in front of you. Each 
-box is numbered sequentially from 0 to n - 1 and each 
-box may contain keys to the other boxes.""" 
+"""You have n number of locked boxes in front of you. Each
+box is numbered sequentially from 0 to n - 1 and each
+box may contain keys to the other boxes."""
+
 
 def canUnlockAll(boxes):
     """Determines if all boxes can be open"""
@@ -21,8 +22,8 @@ def canUnlockAll(boxes):
         return True"""
 
     for i in range(1, len(boxes) - 1):
-        for l in range(0, len(boxes) - 1):
-            if i in boxes[l]:
+        for line in range(0, len(boxes) - 1):
+            if i in boxes[line]:
                 condition = True
         if condition is False:
             return False
