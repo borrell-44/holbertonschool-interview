@@ -7,7 +7,7 @@
  * @head: first node of the list
  * @number: value for the new node
  *
- * Return: address of nre node, or NULL if failed
+ * Return: address of node, or NULL if failed
 */
 
 listint_t *insert_node(listint_t **head, int number)
