@@ -45,10 +45,10 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 			return (new);
 		}
 
-		if (current->left == NULL)
-			current = current->left;
-		else
+		if (current->left != NULL && current->right == NULL)
 			current = current->right;
+		else
+			current = current->left;
 	}
 	return (NULL);
 }
